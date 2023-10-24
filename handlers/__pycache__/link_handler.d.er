@@ -1,13 +1,41 @@
-##[pylyzer] failed /home/hookmeat/avito-scamper/handlers/link_handler.py 1698080549 604
-.___v_desugar_1 = pyimport "(...)"
-.Text: Never
-.___v_desugar_2 = pyimport "aiogram"
+##[pylyzer] failed /home/hookmeat/avito-scamper/handlers/link_handler.py 1698171828 4475
+.___v_desugar_1 = pyimport "aiogram"
 .Router: Never
 .F: Never
 .types: Never
-.___v_desugar_3 = pyimport "(...)"
+.___v_desugar_2 = pyimport "(...)"
 .FSMContext: Never
-.___v_desugar_4 = pyimport "(...)"
+.aiohttp = pyimport "aiohttp"
+
+.asyncio = pyimport "asyncio"
+
+.random = pyimport "random"
+
+.___v_desugar_3 = pyimport "bs4"
+.BeautifulSoup: Never
+.___v_desugar_4 = pyimport "aiohttp_proxy"
+.ProxyConnector: Never
+.___v_desugar_5 = pyimport "(...)"
 .UserState: Never
+.aiohttp_socks = pyimport "aiohttp_socks"
+
+.___v_desugar_6 = pyimport "sqlalchemy"
+.create_engine: Never
+.MetaData: Never
+.Table: Never
+.Column: Never
+.Integer: Never
+.String: Never
+.___v_desugar_7 = pyimport "sqlalchemy/orm"
+.Session: Never
+.sessionmaker: Never
+.___v_desugar_8 = pyimport "(...)"
+.User: Never
+.Task: Never
+.Item: Never
+.proxies: Set({"http://85860d734d:60e3dc1585@95.31.211.120:40292", "http://77a26ef3d1:75d1761627@109.195.6.234:40050", "socks5://user140068:cy4i8q@185.81.147.63:19885"}, 3)
 .router: Never
+
+
+
 

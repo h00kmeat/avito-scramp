@@ -19,7 +19,7 @@ proxies = {
 router = Router()
 
 
-async def data_parser(response, engine, user_id, link):
+async def data_parser(response, engine, user_id, link, message):
     soup = BeautifulSoup(response.text, "html.parser")
     data = soup.find("div", {"data-marker": "item"})
     name = (
@@ -43,21 +43,22 @@ async def data_parser(response, engine, user_id, link):
     )
     if task:
         item = session.query(Item).filter(Item.task_id == task.id, url=url).first()
-        if item:
-            session.commit()
-        else:
+        if not item:
             new_item = Item(task_id=task.id, url=url, price=price)
             session.add(new_item)
-            session.commit()
 
     else:
         new_task = Task(user_id=user_id, category=category, link=link)
         new_item = Item(task_id=task.id, url=url, price=price)
         session.add(new_task)
         session.add(new_item)
-        session.commit()
 
     session.close()
+
+    formatted_data = (
+        f"Name: {name}\nPrice: {price}\nAdd time: {time_adding}\nURL: {url}"
+    )
+    await message.answer(f"ℹ️ New item information:\n{formatted_data} 🚀")
 
 
 async def fetch_with_proxy(url, proxy):
@@ -103,11 +104,11 @@ async def handle_item_link(message: types.Message, state: FSMContext, engine, db
     else:
         for proxy in proxies:
             print(proxy)
-            sleep_time = random.uniform(1, 10)
-            await asyncio.sleep(sleep_time)
             try:
+                sleep_time = random.randint(1, 14)
+                await asyncio.sleep(sleep_time)
                 res = await fetch_with_proxy(link, proxy)
-                await data_parser(res, engine, user_id, link)
+                await data_parser(res, engine, user_id, link, message)
                 success = True
                 break
             except Exception as e:
@@ -117,8 +118,7 @@ async def handle_item_link(message: types.Message, state: FSMContext, engine, db
         print("All proxy servers failed to connect. Trying without a proxy...")
         try:
             res = await fetch_without_proxy(link)
-            await data_parser(res, engine, user_id, link)
+            await data_parser(res, engine, user_id, link, message)
         except Exception as e:
             print(f"Failed to connect without a proxy: {str(e)}")
-
-    await message.answer("Sorry, but we have techn problems :(")
+            await message.answer("Sorry, but we have techn problems :(")
