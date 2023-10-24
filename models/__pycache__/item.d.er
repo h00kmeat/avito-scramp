@@ -1,0 +1,17 @@
+##[pylyzer] failed /home/hookmeat/avito-scamper/models/item.py 1698022705 513
+.___v_desugar_1 = pyimport "sqlalchemy"
+.Integer: Never
+.String: Never
+.Column: Never
+.PrimaryKeyConstraint: Never
+.UniqueConstraint: Never
+.ForeignKey: Never
+.___v_desugar_2 = pyimport "(...)"
+.declarative_base: Never
+.___v_desugar_3 = pyimport "sqlalchemy/orm"
+.relationship: Never
+.Base: Never
+_4 = pyimport "task"
+.Task: Never
+.Base: Never
+ Never

@@ -1,0 +1,16 @@
+##[pylyzer] failed /home/hookmeat/avito-scamper/models/user.py 1698022744 1230
+.___v_desugar_1 = pyimport "sqlalchemy"
+.Column: Never
+.Integer: Never
+.String: Never
+.Boolean: Never
+.PrimaryKeyConstraint: Never
+.UniqueConstraint: Never
+.ForeignKey: Never
+.___v_desugar_2 = pyimport "(...)"
+.declarative_base: Never
+.___v_desugar_3 = pyimport "sqlalchemy/orm"
+.relationship: Never
+.Base: Never
+.create_tables: (engine: Obj) -> Never
+te_tables: (engine: Obj) -> Never

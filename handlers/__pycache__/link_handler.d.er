@@ -1,0 +1,13 @@
+##[pylyzer] failed /home/hookmeat/avito-scamper/handlers/link_handler.py 1698080549 604
+.___v_desugar_1 = pyimport "(...)"
+.Text: Never
+.___v_desugar_2 = pyimport "aiogram"
+.Router: Never
+.F: Never
+.types: Never
+.___v_desugar_3 = pyimport "(...)"
+.FSMContext: Never
+.___v_desugar_4 = pyimport "(...)"
+.UserState: Never
+.router: Never
+

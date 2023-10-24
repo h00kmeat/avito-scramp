@@ -1,0 +1,33 @@
+##[pylyzer] failed /home/hookmeat/avito-scamper/handlers/start_command.py 1698080267 1569
+.___v_desugar_1 = pyimport "(...)"
+.Command: Never
+.___v_desugar_2 = pyimport "aiogram"
+.Router: Never
+.F: Never
+.types: Never
+.___v_desugar_3 = pyimport "(...)"
+.get_show_create_kb: Never
+.___v_desugar_4 = pyimport "(...)"
+.FSMContext: Never
+.___v_desugar_5 = pyimport "sqlalchemy"
+.create_engine: Never
+.MetaData: Never
+.Table: Never
+.Column: Never
+.Integer: Never
+.String: Never
+.___v_desugar_6 = pyimport "sqlalchemy/orm"
+.Session: Never
+.sessionmaker: Never
+.___v_desugar_7 = pyimport "(...)"
+.User: Never
+.Task: Never
+.Item: Never
+.___v_desugar_8 = pyimport "(...)"
+.UserState: Never
+.router: Never
+
+
+router: Never
+
+

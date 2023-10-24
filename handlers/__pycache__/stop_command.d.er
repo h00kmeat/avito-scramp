@@ -1,0 +1,14 @@
+##[pylyzer] failed /home/hookmeat/avito-scamper/handlers/stop_command.py 1698079108 708
+.___v_desugar_1 = pyimport "aiogram/filters"
+.Command: Never
+.___v_desugar_2 = pyimport "aiogram"
+.Router: Never
+.F: Never
+.types: Never
+.___v_desugar_3 = pyimport "sqlalchemy/orm"
+.Session: Never
+.sessionmaker: Never
+.___v_desugar_4 = pyimport "(...)"
+.User: Never
+.router: Never
+
