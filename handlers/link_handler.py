@@ -20,8 +20,10 @@ router = Router()
 
 
 async def data_parser(response, engine, user_id, link, message):
-    soup = BeautifulSoup(response.text, "html.parser")
+    soup = BeautifulSoup(response, "html.parser")
+    print(soup)
     data = soup.find("div", {"data-marker": "item"})
+    print(data)
     name = (
         data.find("a", {"itemprop": "url"}).find("h3", {"itemprop": "name"}).get_text()
     )
@@ -72,7 +74,7 @@ async def fetch_with_proxy(url, proxy):
             print(response)
             if response.status == 200:
                 print("Request successful.")
-                return await response
+                return await response.text()
             else:
                 print(f"Request failed with status code {response.status}")
 
