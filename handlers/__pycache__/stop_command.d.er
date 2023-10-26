@@ -1,4 +1,4 @@
-##[pylyzer] failed /home/hookmeat/avito-scamper/handlers/stop_command.py 1698079108 708
+##[pylyzer] failed /home/hookmeat/avito-scamper/handlers/stop_command.py 1698291556 962
 .___v_desugar_1 = pyimport "aiogram/filters"
 .Command: Never
 .___v_desugar_2 = pyimport "aiogram"
@@ -10,5 +10,9 @@
 .sessionmaker: Never
 .___v_desugar_4 = pyimport "(...)"
 .User: Never
+.asyncio = pyimport "asyncio"
+
+.___v_desugar_5 = pyimport "(...)"
+.FSMContext: Never
 .router: Never
 

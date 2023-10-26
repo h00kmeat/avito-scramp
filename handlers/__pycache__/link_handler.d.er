@@ -1,12 +1,10 @@
-##[pylyzer] failed /home/hookmeat/avito-scamper/handlers/link_handler.py 1698171828 4475
+##[pylyzer] failed /home/hookmeat/avito-scamper/handlers/link_handler.py 1698292615 2016
 .___v_desugar_1 = pyimport "aiogram"
 .Router: Never
 .F: Never
 .types: Never
 .___v_desugar_2 = pyimport "(...)"
 .FSMContext: Never
-.aiohttp = pyimport "aiohttp"
-
 .asyncio = pyimport "asyncio"
 
 .random = pyimport "random"
@@ -17,8 +15,6 @@
 .ProxyConnector: Never
 .___v_desugar_5 = pyimport "(...)"
 .UserState: Never
-.aiohttp_socks = pyimport "aiohttp_socks"
-
 .___v_desugar_6 = pyimport "sqlalchemy"
 .create_engine: Never
 .MetaData: Never
@@ -33,7 +29,15 @@
 .User: Never
 .Task: Never
 .Item: Never
-.proxies: Set({"http://85860d734d:60e3dc1585@95.31.211.120:40292", "http://77a26ef3d1:75d1761627@109.195.6.234:40050", "socks5://user140068:cy4i8q@185.81.147.63:19885"}, 3)
+.___v_desugar_9 = pyimport "(...)"
+.fetch_with_proxy: Never
+.fetch_without_proxy: Never
+.___v_desugar_10 = pyimport "handlers/parser"
+.data_parser: Never
+.proxies: Array!(Never, 0)
+.router: Never
+
+ks5://user140068:cy4i8q@185.81.147.63:19885"}, 3)
 .router: Never
 
 

@@ -1,4 +1,4 @@
-##[pylyzer] failed /home/hookmeat/avito-scamper/handlers/start_command.py 1698080267 1569
+##[pylyzer] failed /home/hookmeat/avito-scamper/handlers/start_command.py 1698291938 1820
 .___v_desugar_1 = pyimport "(...)"
 .Command: Never
 .___v_desugar_2 = pyimport "aiogram"
@@ -25,9 +25,12 @@
 .Item: Never
 .___v_desugar_8 = pyimport "(...)"
 .UserState: Never
+.___v_desugar_9 = pyimport "(...)"
+.key: Never
+.asyncio = pyimport "asyncio"
+
+.___v_desugar_10 = pyimport "(...)"
+.process_updating: Never
 .router: Never
-
-
-router: Never
 
 
