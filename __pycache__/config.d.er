@@ -1,7 +1,0 @@
-##[pylyzer] failed /home/hookmeat/avito-scamper/config.py 1697994774 788
-.___v_desugar_1 = pyimport "(...)"
-.BaseSettings: Never
-.SettingsConfigDict: Never
-.___v_desugar_2 = pyimport "pydantic"
-.SecretStr: Never
-.config: Never
